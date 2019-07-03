@@ -5,7 +5,7 @@ const normalizeValue = (value: any): string => value.toString().trim().toLowerCa
 
 const booleanValues: string[] = [
     ...booleanValuesRepresentingTrue,
-    ...booleanValuesRepresentingFalse
+    ...booleanValuesRepresentingFalse,
 ].map((value) => normalizeValue(value));
 
 export const parseBoolean = <T>(value: any, defaultValue: T): T | boolean => {
