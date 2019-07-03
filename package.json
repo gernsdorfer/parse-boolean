@@ -1,0 +1,40 @@
+{
+  "name": "parse-boolean",
+  "version": "1.0.0",
+  "description": "parse boolean",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "karma start --singleRun=true",
+    "test:watch": "karma start --singleRun=false",
+    "init" : "docker build -t parser-boolean .",
+    "runTest": "docker run --rm -d --name container parser-boolean "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gernsdorfer/parse-boolean.git"
+  },
+  "keywords": [
+    "parser",
+    "boolean",
+    "convert"
+  ],
+  "author": "Lars Wiedemann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gernsdorfer/parse-boolean/issues"
+  },
+  "homepage": "https://github.com/gernsdorfer/parse-boolean#readme",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.35",
+    "jasmine-core": "^3.3.0",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-coverage-istanbul-reporter": "^2.0.5",
+    "karma-jasmine": "^1.0.2",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "karma-typescript": "^4.1.1",
+    "typescript": "^3.5.2"
+  }
+}
