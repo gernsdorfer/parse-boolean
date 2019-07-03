@@ -1,5 +1,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/gernsdorfer/parse-boolean/badge.svg?branch=master)](https://coveralls.io/github/gernsdorfer/parse-boolean?branch=master)
 
+[![Build Status](https://travis-ci.org/gernsdorfer/parse-boolean.svg?branch=master)](https://travis-ci.org/gernsdorfer/parse-boolean)
+
 
 # parser-boolean
 
