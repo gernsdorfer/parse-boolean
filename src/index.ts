@@ -1,5 +1,11 @@
-const booleanValuesRepresentingTrue: string[] = ['true', '1'];
-const booleanValuesRepresentingFalse: string[] = ['false', '0'];
+const booleanValuesRepresentingTrue: string[] = [
+    'true',
+    '1'
+];
+const booleanValuesRepresentingFalse: string[] = [
+    'false',
+    '0'
+];
 
 const normalizeValue = (value: any): string => value.toString().trim().toLowerCase();
 

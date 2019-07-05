@@ -3,9 +3,15 @@
 [![Build Status](https://travis-ci.org/gernsdorfer/parse-boolean.svg?branch=master)](https://travis-ci.org/gernsdorfer/parse-boolean)
 
 
+## Browsers support
+
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome |
+| --------- | --------- | --------- |
+| IE11, Edge| last 10 versions| last 10 versions
+
 # parser-boolean
 
-javascript boolean parser  
+javascript boolean parser, compatible with ie 11
 
 
 ## Install
@@ -17,38 +23,33 @@ yarn add parser-boolean
 
 ## Usage
 ```javascript 
-parseBoolean(string, defaultValue)
+parseBoolean([string], [defaultValue])
 
 parseBoolean('true', 'defaultValue');  //-> true
 parseBoolean(' TRUE ', 'defaultValue');  //-> true
 parseBoolean('false', 'defaultValue');  //-> false
- 
-parseBoolean('1', 'defaultValue');  //-> null
+parseBoolean('1', 'defaultValue');  //-> true
+
 parseBoolean('', 'defaultValue');  //-> 'defaultValue'
 ```
 
 ### Javascript
 ```javascript
 var parseBoolean = require('parser-boolean');
-parseBoolean('true','defaultValue');
-```
-```sh
-Output should be 'Boys'
+console.log(parseBoolean('true', 'defaultValue')); //-> true
 ```
 
 ### TypeScript
 ```typescript
 import { parseBoolean } from 'parser-boolean';
-console.log(parseBoolean('true','defaultValue'))
-```
-```sh
-Output should be 'Geese'
+console.log(parseBoolean('true', 'defaultValue')); //-> true
 ```
 
 ### AMD
 ```javascript
-define(function(require,exports,module){
-  var parseBoolean = require('parser-boolean');
+define(function (require, exports, module) {
+    var parseBoolean = require('parser-boolean');
+    console.log(parseBoolean('true', 'defaultValue')); //-> true
 });
 ```
 
