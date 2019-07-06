@@ -1,6 +1,6 @@
 {
   "name": "parser-boolean",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "parse boolean",
   "main": "dist/index.js",
   "scripts": {
