@@ -1,7 +1,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/gernsdorfer/parse-boolean/badge.svg?branch=master)](https://coveralls.io/github/gernsdorfer/parse-boolean?branch=master)
-
 [![Build Status](https://travis-ci.org/gernsdorfer/parse-boolean.svg?branch=master)](https://travis-ci.org/gernsdorfer/parse-boolean)
-
+[![NPM version](https://img.shields.io/npm/v/parser-boolean.svg?style=flat)](https://www.npmjs.com/package/parser-booleann)
+[![NPM monthly downloads](https://img.shields.io/npm/dm/parser-boolean.svg?style=flat)](https://npmjs.org/package/parser-boolean) 
+[![NPM total downloads](https://img.shields.io/npm/dt/parser-boolean.svg?style=flat)](https://npmjs.org/package/parser-boolean) 
 
 ## Browsers support
 
